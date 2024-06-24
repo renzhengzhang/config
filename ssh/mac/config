@@ -1,0 +1,7 @@
+Host    github.com
+    User            git
+    Port            443
+    Hostname        ssh.github.com
+    IdentityFile    ~/.ssh/github_ed25519
+    TCPKeepAlive    yes
+    ProxyCommand    nc -v -x 127.0.0.1:1086 %h %p
