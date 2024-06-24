@@ -1,0 +1,23 @@
+Host github.com
+  User git
+  Port 443
+  Hostname ssh.github.com
+  IdentityFile "C:\Users\Renzheng\.ssh\github_ed25519"
+  TCPKeepAlive yes
+  ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p
+
+Host ssh.github.com
+  User git
+  Port 443
+  Hostname ssh.github.com
+  IdentityFile "C:\Users\Renzheng\.ssh\github_ed25519"
+  TCPKeepAlive yes
+  ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p
+  
+Host gitlab.com
+  User git
+  Port 22
+  Hostname gitlab.com
+  IdentityFile "C:\Users\Renzheng\.ssh\gitlab_ed25519"
+  TCPKeepAlive yes
+  ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p
